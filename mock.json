@@ -1,1 +1,260 @@
-{"request":{"query":"\n    query getSelectionInfo($code: ID!) {\n      student(codigo: $code) {\n        codigo\n        nombre\n        apellido_paterno\n        apellido_materno\n        nivel\n        grupo\n      }\n      workshops {\n        name\n        description\n        levels\n        options {\n          id\n          day\n          time\n          teacher\n          workshop\n          url\n          zoom_id\n          available\n        }\n      }\n    }\n  ","variables":{"code":"1234567890"}},"result":{"student":{"codigo":"1234567890","nombre":"Gonzalo","apellido_paterno":"Rocha","apellido_materno":"De La Cruz","nivel":"4","grupo":"E4-1"},"workshops":[{"name":"Conversation","description":"El alumno se expresa oralmente utilizando las funciones comunicativas y vocabulario adquirido, mejorar la fluidez, y perder el temor a hablar.","levels":["1","2","3","4","5","6"],"options":[{"id":"alondralunes","day":"lunes","time":"13:00 - 14:00","teacher":"Alondra","workshop":"Conversation","url":"https://meet.google.com/lookup/fnms6k7cad","zoom_id":null,"available":true},{"id":"alondramartes","day":"martes","time":"13:00 - 14:00","teacher":"Alondra","workshop":"Conversation","url":"https://meet.google.com/lookup/fnms6k7cad","zoom_id":null,"available":false},{"id":"sergiomartes","day":"martes","time":"14:00 - 15:00","teacher":"Sergio","workshop":"Conversation","url":"https://meet.google.com/psr-adqx-ebv","zoom_id":null,"available":false},{"id":"gisselmartes","day":"martes","time":"16:00 - 17:00","teacher":"Gissel","workshop":"Conversation","url":"meet.google.com/ujd-dwfz-hpp","zoom_id":null,"available":false},{"id":"carlosmiercoles","day":"miercoles","time":"12:00 - 13:00","teacher":"Carlos","workshop":"Conversation","url":"https://us02web.zoom.us/j/86845226720?pwd=dTVmbllvaXpDLzJneDV1TEVVVU83Zz09","zoom_id":"3175","available":false},{"id":"sergiomiercoles","day":"miercoles","time":"14:00 - 15:00","teacher":"Sergio","workshop":"Conversation","url":"https://meet.google.com/psr-adqx-ebv","zoom_id":null,"available":false},{"id":"gisselmiercoles","day":"miercoles","time":"16:00 - 17:00","teacher":"Gissel","workshop":"Conversation","url":"meet.google.com/ujd-dwfz-hpp","zoom_id":null,"available":false},{"id":"gonzalojueves","day":"jueves","time":"14:00 - 15:00","teacher":"Gonzalo","workshop":"Conversation","url":"https://meet.google.com/wbu-jzfw-hbs","zoom_id":null,"available":false},{"id":"zulletjueves","day":"jueves","time":"13:00 - 14:00","teacher":"Zullet","workshop":"Conversation","url":"https://meet.google.com/lookup/hajdogn5gm","zoom_id":null,"available":false}]},{"name":"TOEFL Preparation","description":"Ayuda a desarrollar habilidades para el examen de certificación, a partir del dominio ya adquirido del idioma. Duracion: 1 mes.","levels":["6"],"options":[{"id":"carloslunes","day":"lunes","time":"12:00 - 13:00","teacher":"Carlos","workshop":"TOEFL Preparation","url":"https://us02web.zoom.us/j/86597209094?pwd=cHRQQkZsQmVnamtXYVJqQ0V2L1dFZz09","zoom_id":"3175","available":true},{"id":"carlosmartes","day":"martes","time":"12:00 - 13:00","teacher":"Carlos","workshop":"TOEFL Preparation","url":"https://us02web.zoom.us/j/86597209094?pwd=cHRQQkZsQmVnamtXYVJqQ0V2L1dFZz09","zoom_id":"3175","available":true},{"id":"brendamiercoles","day":"miercoles","time":"11:00 - 12:00","teacher":"Brenda","workshop":"TOEFL Preparation","url":"https://classroom.google.com/c/MTgyNjAyMjUzMjU1?cjc=to7s5ow","zoom_id":null,"available":true},{"id":"brendajueves","day":"jueves","time":"11:00 - 12:00","teacher":"Brenda","workshop":"TOEFL Preparation","url":"https://classroom.google.com/c/MTgyNjAyMjUzMjU1?cjc=to7s5ow","zoom_id":null,"available":true}]},{"name":"Basic Reading","description":"Lectura de textos e historias sencillas para trabajar con vocabulario y lectura de comprensión. Niveles 1-3","levels":["1","2","3"],"options":[{"id":"alondramiercoles","day":"miercoles","time":"13:00 - 14:00","teacher":"Alondra","workshop":"Basic Reading","url":"https://classroom.google.com/c/MTc4NjI5MDcxMDM4?cjc=i464gik","zoom_id":null,"available":false}]},{"name":"Advanced Reading","description":"Lectura de textos e historias sencillas para trabajar con vocabulario y lectura de comprensión. Niveles 1-3","levels":["4","5","6"],"options":[{"id":"brendamartes","day":"martes","time":"11:00 - 12:00","teacher":"Brenda","workshop":"Advanced Reading","url":"https://meet.google.com/bdo-ejjr-uwv","zoom_id":null,"available":false}]},{"name":"Basic/Advanced Listening","description":"Ayuda a desarrollar la habilidad de comprensión de escucha por medio de audios. Basic: Niveles 1-3; Advanced: Niveles 4-6","levels":["1","2","3","4","5","6"],"options":[{"id":"zulletlunes","day":"lunes","time":"12:00 - 13:00","teacher":"Zullet","workshop":"Basic/Advanced Listening","url":"https://classroom.google.com/c/MTM5MTQxNjg1Mjkw?cjc=p2hpkdw","zoom_id":null,"available":false},{"id":"zulletmartes","day":"martes","time":"12:00 - 13:00","teacher":"Zullet","workshop":"Basic/Advanced Listening","url":"https://classroom.google.com/c/MTM5MTQxNjg1Mjkw?cjc=p2hpkdw","zoom_id":null,"available":false}]},{"name":"Tutoring","description":"Es un proceso de acompañamiento, aclarando dudas. El alumno deberá saber exactamente el tema a repasar.","levels":["1","2","3","4","5","6"],"options":[{"id":"sergiolunes","day":"lunes","time":"14:00 - 15:00","teacher":"Sergio","workshop":"Tutoring","url":"https://meet.google.com/mxs-brnf-mug","zoom_id":null,"available":true},{"id":"gissellunes","day":"lunes","time":"16:00 - 17:00","teacher":"Gissel","workshop":"Tutoring","url":"meet.google.com/nbn-vcnq-wpo","zoom_id":null,"available":false},{"id":"zulletmiercoles","day":"miercoles","time":"11:00 - 12:00","teacher":"Zullet","workshop":"Tutoring","url":"https://meet.google.com/lookup/f72kstl6px","zoom_id":null,"available":false}]}]}}
+{
+  "request": {
+    "query": "\n    query getSelectionInfo($code: ID!) {\n      student(codigo: $code) {\n        codigo\n        nombre\n        apellido_paterno\n        apellido_materno\n        nivel\n        grupo\n      }\n      workshops {\n        name\n        description\n        levels\n        options {\n          id\n          day\n          time\n          teacher\n          workshop\n          url\n          zoom_id\n          available\n        }\n      }\n    }\n  ",
+    "variables": { "code": "1234567890" }
+  },
+  "result": {
+    "student": {
+      "codigo": "1234567890",
+      "nombre": "Gonzalo",
+      "apellido_paterno": "Rocha",
+      "apellido_materno": "De La Cruz",
+      "nivel": "4",
+      "grupo": "E4-1"
+    },
+    "workshops": [
+      {
+        "name": "Conversation",
+        "description": "El alumno se expresa oralmente utilizando las funciones comunicativas y vocabulario adquirido, mejorar la fluidez, y perder el temor a hablar.",
+        "levels": ["1", "2", "3", "4", "5", "6"],
+        "options": [
+          {
+            "id": "alondralunes",
+            "day": "lunes",
+            "time": "13:00 - 14:00",
+            "teacher": "Alondra",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/lookup/fnms6k7cad",
+            "zoom_id": null,
+            "available": true
+          },
+          {
+            "id": "alondramartes",
+            "day": "martes",
+            "time": "13:00 - 14:00",
+            "teacher": "Alondra",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/lookup/fnms6k7cad",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "sergiomartes",
+            "day": "martes",
+            "time": "14:00 - 15:00",
+            "teacher": "Sergio",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/psr-adqx-ebv",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "gisselmartes",
+            "day": "martes",
+            "time": "16:00 - 17:00",
+            "teacher": "Gissel",
+            "workshop": "Conversation",
+            "url": "meet.google.com/ujd-dwfz-hpp",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "carlosmiercoles",
+            "day": "miercoles",
+            "time": "12:00 - 13:00",
+            "teacher": "Carlos",
+            "workshop": "Conversation",
+            "url": "https://us02web.zoom.us/j/86845226720?pwd=dTVmbllvaXpDLzJneDV1TEVVVU83Zz09",
+            "zoom_id": "3175",
+            "available": false
+          },
+          {
+            "id": "sergiomiercoles",
+            "day": "miercoles",
+            "time": "14:00 - 15:00",
+            "teacher": "Sergio",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/psr-adqx-ebv",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "gisselmiercoles",
+            "day": "miercoles",
+            "time": "16:00 - 17:00",
+            "teacher": "Gissel",
+            "workshop": "Conversation",
+            "url": "meet.google.com/ujd-dwfz-hpp",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "gonzalojueves",
+            "day": "jueves",
+            "time": "14:00 - 15:00",
+            "teacher": "Gonzalo",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/wbu-jzfw-hbs",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "zulletjueves",
+            "day": "jueves",
+            "time": "13:00 - 14:00",
+            "teacher": "Zullet",
+            "workshop": "Conversation",
+            "url": "https://meet.google.com/lookup/hajdogn5gm",
+            "zoom_id": null,
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "TOEFL Preparation",
+        "description": "Ayuda a desarrollar habilidades para el examen de certificación, a partir del dominio ya adquirido del idioma. Duracion: 1 mes.",
+        "levels": ["6"],
+        "options": [
+          {
+            "id": "carloslunes",
+            "day": "lunes",
+            "time": "12:00 - 13:00",
+            "teacher": "Carlos",
+            "workshop": "TOEFL Preparation",
+            "url": "https://us02web.zoom.us/j/86597209094?pwd=cHRQQkZsQmVnamtXYVJqQ0V2L1dFZz09",
+            "zoom_id": "3175",
+            "available": true
+          },
+          {
+            "id": "carlosmartes",
+            "day": "martes",
+            "time": "12:00 - 13:00",
+            "teacher": "Carlos",
+            "workshop": "TOEFL Preparation",
+            "url": "https://us02web.zoom.us/j/86597209094?pwd=cHRQQkZsQmVnamtXYVJqQ0V2L1dFZz09",
+            "zoom_id": "3175",
+            "available": true
+          },
+          {
+            "id": "brendamiercoles",
+            "day": "miercoles",
+            "time": "11:00 - 12:00",
+            "teacher": "Brenda",
+            "workshop": "TOEFL Preparation",
+            "url": "https://classroom.google.com/c/MTgyNjAyMjUzMjU1?cjc=to7s5ow",
+            "zoom_id": null,
+            "available": true
+          },
+          {
+            "id": "brendajueves",
+            "day": "jueves",
+            "time": "11:00 - 12:00",
+            "teacher": "Brenda",
+            "workshop": "TOEFL Preparation",
+            "url": "https://classroom.google.com/c/MTgyNjAyMjUzMjU1?cjc=to7s5ow",
+            "zoom_id": null,
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Basic Reading",
+        "description": "Lectura de textos e historias sencillas para trabajar con vocabulario y lectura de comprensión. Niveles 1-3",
+        "levels": ["1", "2", "3"],
+        "options": [
+          {
+            "id": "alondramiercoles",
+            "day": "miercoles",
+            "time": "13:00 - 14:00",
+            "teacher": "Alondra",
+            "workshop": "Basic Reading",
+            "url": "https://classroom.google.com/c/MTc4NjI5MDcxMDM4?cjc=i464gik",
+            "zoom_id": null,
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Advanced Reading",
+        "description": "Lectura de textos e historias sencillas para trabajar con vocabulario y lectura de comprensión. Niveles 1-3",
+        "levels": ["4", "5", "6"],
+        "options": [
+          {
+            "id": "brendamartes",
+            "day": "martes",
+            "time": "11:00 - 12:00",
+            "teacher": "Brenda",
+            "workshop": "Advanced Reading",
+            "url": "https://meet.google.com/bdo-ejjr-uwv",
+            "zoom_id": null,
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Basic/Advanced Listening",
+        "description": "Ayuda a desarrollar la habilidad de comprensión de escucha por medio de audios. Basic: Niveles 1-3; Advanced: Niveles 4-6",
+        "levels": ["1", "2", "3", "4", "5", "6"],
+        "options": [
+          {
+            "id": "zulletlunes",
+            "day": "lunes",
+            "time": "12:00 - 13:00",
+            "teacher": "Zullet",
+            "workshop": "Basic/Advanced Listening",
+            "url": "https://classroom.google.com/c/MTM5MTQxNjg1Mjkw?cjc=p2hpkdw",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "zulletmartes",
+            "day": "martes",
+            "time": "12:00 - 13:00",
+            "teacher": "Zullet",
+            "workshop": "Basic/Advanced Listening",
+            "url": "https://classroom.google.com/c/MTM5MTQxNjg1Mjkw?cjc=p2hpkdw",
+            "zoom_id": null,
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Tutoring",
+        "description": "Es un proceso de acompañamiento, aclarando dudas. El alumno deberá saber exactamente el tema a repasar.",
+        "levels": ["1", "2", "3", "4", "5", "6"],
+        "options": [
+          {
+            "id": "sergiolunes",
+            "day": "lunes",
+            "time": "14:00 - 15:00",
+            "teacher": "Sergio",
+            "workshop": "Tutoring",
+            "url": "https://meet.google.com/mxs-brnf-mug",
+            "zoom_id": null,
+            "available": true
+          },
+          {
+            "id": "gissellunes",
+            "day": "lunes",
+            "time": "16:00 - 17:00",
+            "teacher": "Gissel",
+            "workshop": "Tutoring",
+            "url": "meet.google.com/nbn-vcnq-wpo",
+            "zoom_id": null,
+            "available": false
+          },
+          {
+            "id": "zulletmiercoles",
+            "day": "miercoles",
+            "time": "11:00 - 12:00",
+            "teacher": "Zullet",
+            "workshop": "Tutoring",
+            "url": "https://meet.google.com/lookup/f72kstl6px",
+            "zoom_id": null,
+            "available": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -12,7 +12,7 @@ const mockCreator = async (query: any, variables: any, endpoint: string) => {
       query,
       variables,
     },
-    result: response,
+    result: { data: response },
   };
   return mock;
 };
