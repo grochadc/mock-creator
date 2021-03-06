@@ -9,7 +9,7 @@ Function signature:
 
 ### Without variables
 
-```
+```typescript
 improt {gql} from "graphql-tag";
 const SOME_QUERY = gql`
   query {
@@ -37,7 +37,7 @@ console.log:
 
 ### With variables
 
-```
+```typescript
 improt {gql} from "graphql-tag";
 const SOME_QUERY = gql`
   query namedQuery($name: String!) {
