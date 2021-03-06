@@ -10,13 +10,16 @@ Function signature:
 ### Without variables
 
 ```typescript
-improt {gql} from "graphql-tag";
+import mockCreator from "mock-creator";
+import { gql } from "graphql-tag";
 const SOME_QUERY = gql`
   query {
     hello
   }
-`
-mockCreator(SOME_QUERY, null, "http://localhost:5000/graphql").then((data) => console.log(data))
+`;
+mockCreator(SOME_QUERY, null, "http://localhost:5000/graphql").then((data) =>
+  console.log(data)
+);
 
 /*
 console.log:
@@ -38,13 +41,18 @@ console.log:
 ### With variables
 
 ```typescript
-improt {gql} from "graphql-tag";
+import mockCreator from "mock-creator";
+import { gql } from "graphql-tag";
 const SOME_QUERY = gql`
   query namedQuery($name: String!) {
     hello(input: $name)
   }
-`
-mockCreator(SOME_QUERY, {name: "Gonzo"}, "http://localhost:5000/graphql").then((data) => console.log(data))
+`;
+mockCreator(
+  SOME_QUERY,
+  { name: "Gonzo" },
+  "http://localhost:5000/graphql"
+).then((data) => console.log(data));
 
 /*
 console.log:
